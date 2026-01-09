@@ -2,10 +2,18 @@ name: Nghitts Vietnamese TTS
 version: "1.0"
 slug: nghitts
 description: Vietnamese TTS add-on for Home Assistant (nghitts)
+
+arch:
+  - amd64
+  - arm64
+  - armv7
+
 startup: services
 boot: auto
 host_network: true
+
 map:
   - media:rw
+
 ports:
   - 5000/tcp: 5000
